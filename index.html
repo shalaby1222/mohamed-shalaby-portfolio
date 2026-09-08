@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Mohamed Shalaby Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description"
+		content="Mohamed Reda Shalaby is a Computer Science student and .NET Backend Developer specializing in C#, ASP.NET Core, Web APIs, EF Core, and SQL Server.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+	function sendEmail() {
+
+		const name = document.getElementById("contact-name").value;
+		const email = document.getElementById("contact-email").value;
+		const subject = document.getElementById("contact-subject").value;
+		const message = document.getElementById("contact-message").value;
+
+		const body =
+			"Name: " + name + "%0D%0A" +
+			"Email: " + email + "%0D%0A%0D%0A" +
+			message;
+
+		const mailtoLink =
+			"mailto:momoshalaby46@gmail.com" +
+			"?subject=" + encodeURIComponent(subject) +
+			"&body=" + body;
+
+		window.location.href = mailtoLink;
+	}
+</script>
+
+<script>
+	$(document).ready(function () {
+
+		// Close menu when clicking a navigation link
+		$('#ftco-nav .nav-link').on('click', function () {
+			$('#ftco-nav').collapse('hide');
+		});
+
+		// Close menu when clicking outside the navbar
+		$(document).on('click', function (event) {
+
+			var navbar = $('#ftco-navbar');
+
+			if (
+				navbar.hasClass('js-fh5co-nav-toggle') &&
+				!navbar.is(event.target) &&
+				navbar.has(event.target).length === 0
+			) {
+				$('#ftco-nav').collapse('hide');
+			}
+
+		});
+
+	});
+</script>
+
+
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target sticky-top"
+		id="ftco-navbar">
+
+		<div class="container">
+
+			<a class="navbar-brand" href="index.html">
+				Mohamed Shalaby
+			</a>
+
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+
+				<span class="oi oi-menu"></span> Menu
+			</button>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+
+				<ul class="navbar-nav nav ml-auto">
+
+					<li class="nav-item">
+						<a href="#home-section" class="nav-link">
+							<span>Home</span>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#about-section" class="nav-link">
+							<span>About</span>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#resume-section" class="nav-link">
+							<span>Resume</span>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#services-section" class="nav-link">
+							<span>Services</span>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#skills-section" class="nav-link">
+							<span>Skills</span>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#projects-section" class="nav-link">
+							<span>Projects</span>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#contact-section" class="nav-link">
+							<span>Contact</span>
+						</a>
+					</li>
+
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+
+	<section id="home-section" class="hero">
+		<div class="home-slider owl-carousel">
+
+			<!-- Slide 1: Introduction -->
+			<div class="slider-item">
+				<div class="overlay"></div>
+
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+
+						<div class="one-third js-fullheight order-md-last img"
+							style="background-image:url(images/mohamed-shalaby.png);">
+							<div class="overlay"></div>
+						</div>
+
+						<div class="one-forth d-flex align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+
+							<div class="text">
+
+								<span class="subheading">Backend Developer</span>
+
+								<h1 class="mb-4 mt-3">
+									I'm <span>Mohamed Reda Shalaby</span>
+								</h1>
+
+								<h2 class="mb-4">
+									ASP.NET Core & .NET Developer
+								</h2>
+
+								<p style="color: #fff; max-width: 550px; margin-bottom: 25px;">
+									I build clean, secure, and scalable backend solutions
+									for modern web applications.
+								</p>
+
+								<p>
+									<a href="#contact-section" class="btn btn-primary py-3 px-4">
+										View My Work
+									</a>
+
+								</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Slide 2: What I Build -->
+			<div class="slider-item">
+
+				<div class="overlay"></div>
+
+				<div class="container">
+					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+
+						<div class="one-third js-fullheight order-md-last img"
+							style="background-image:url(images/mohamed-shalaby.png);">
+							<div class="overlay"></div>
+						</div>
+
+						<div class="one-forth d-flex align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+
+							<div class="text">
+
+								<span class="subheading">
+									Building Reliable Backends
+								</span>
+
+								<h1 class="mb-4 mt-3">
+									<span>Scalable APIs</span>
+									Built for Real Applications
+								</h1>
+
+								<h2 class="mb-4">
+									ASP.NET Core & RESTful APIs
+								</h2>
+
+								<p style="color: #fff; max-width: 550px; margin-bottom: 25px;">
+									I design and develop reliable APIs and maintainable
+									backend systems focused on performance, security, and scalability.
+								</p>
+
+								<p>
+										<a href="#contact-section" class="btn btn-primary py-3 px-4">
+											View My Work
+										</a>
+
+									
+								</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row d-flex">
+
+				<!-- About Image -->
+				<div class="col-md-6 col-lg-5 d-flex">
+					<div class="img-about img d-flex align-items-stretch">
+						<div class="overlay"></div>
+						<div class="img d-flex align-self-stretch align-items-center"
+							style="background-image:url(images/mohamed-shalaby.png);">
+						</div>
+					</div>
+				</div>
+
+				<!-- About Content -->
+				<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+					<div class="row justify-content-start pb-3">
+						<div class="col-md-12 heading-section ftco-animate">
+
+							<h1 class="big">About</h1>
+
+							<h2 class="mb-4">About Me</h2>
+
+							<p>
+								I'm a Junior .NET Backend Developer and Computer Science student
+								passionate about building reliable, scalable, and maintainable
+								backend solutions. I specialize in C#, ASP.NET Core, Web APIs,
+								Entity Framework Core, and SQL Server.
+							</p>
+
+							<p>
+								I focus on designing clean backend architectures, building
+								secure RESTful APIs, and creating systems that are easy to
+								maintain and scale. Through academic projects, training, and
+								hands-on development, I've worked with Clean Architecture,
+								SOLID principles, authentication, database design, and
+								third-party API integration.
+							</p>
+
+							<ul class="about-info mt-4 px-md-0 px-2">
+								<li class="d-flex">
+									<span>Name:</span>
+									<span>Mohamed Reda Shalaby</span>
+								</li>
+
+								<li class="d-flex">
+									<span>Education:</span>
+									<span>B.Sc. Computer Science</span>
+								</li>
+
+								<li class="d-flex">
+									<span>University:</span>
+									<span>October 6 University</span>
+								</li>
+
+								<li class="d-flex">
+									<span>Specialization:</span>
+									<span>.NET Backend Development</span>
+								</li>
+
+								<li class="d-flex">
+									<span>Email:</span>
+									<span>momoshalaby46@gmail.com</span>
+								</li>
+
+								<li class="d-flex">
+									<span>Location:</span>
+									<span>Gharbia, Egypt</span>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+
+					<div class="counter-wrap ftco-animate d-flex mt-md-3">
+						<div class="text">
+
+							<p class="mb-4">
+								<span class="number" data-number="3">0</span>
+								<span>Featured Projects</span>
+							</p>
+
+							<p>
+								<a href="files/Mohamed_Shalaby_CV.pdf" class="btn btn-primary py-4 px-5"
+									target="_blank">
+									Download CV
+								</a>
+							</p>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="container">
+
+			<!-- Section Header -->
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Resume</h1>
+					<h2 class="mb-4">My Resume</h2>
+					<p>
+						My academic background, professional training, and hands-on
+						experience in backend development.
+					</p>
+				</div>
+			</div>
+
+			<div class="row">
+
+				<!-- LEFT COLUMN -->
+				<div class="col-md-6">
+
+					<!-- Education -->
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2023 - 2027</span>
+						<h2>B.Sc. Computer Science</h2>
+						<span class="position">October 6 University</span>
+						<p class="mt-4">
+							Studying Computer Science with a focus on software
+							development, programming, databases, and system design.
+							Current CGPA: 3.37 / 4.00.
+						</p>
+					</div>
+
+					<!-- NTI Training -->
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Jul 2025 - Aug 2025</span>
+						<h2>Full-Stack Web Development Trainee</h2>
+						<span class="position">National Telecommunication Institute (NTI)</span>
+						<p class="mt-4">
+							Worked on backend development using PHP and Laravel,
+							RESTful APIs, authentication and authorization,
+							database design, and MySQL.
+						</p>
+					</div>
+
+					<!-- DEPI -->
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2026 - Present</span>
+						<h2>.NET Full-Stack Web Developer Trainee</h2>
+						<span class="position">Digital Egypt Pioneers Initiative (DEPI)</span>
+						<p class="mt-4">
+							Developing practical skills in C#, .NET, ASP.NET Core,
+							Web APIs, databases, software architecture, and
+							professional development.
+						</p>
+					</div>
+
+				</div>
+
+
+				<!-- RIGHT COLUMN -->
+				<div class="col-md-6">
+
+					<!-- Backend Development -->
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2025 - Present</span>
+						<h2>Backend Developer</h2>
+						<span class="position">Personal & Academic Projects</span>
+						<p class="mt-4">
+							Building backend applications and RESTful APIs using
+							C#, ASP.NET Core, Entity Framework Core, SQL Server,
+							Clean Architecture, and SOLID principles.
+						</p>
+					</div>
+
+					<!-- Marketplace -->
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Project</span>
+						<h2>Multi-Vendor Marketplace</h2>
+						<span class="position">ASP.NET Core MVC</span>
+						<p class="mt-4">
+							Developed a multi-vendor e-commerce application with
+							Admin, Vendor, and Customer roles using Clean
+							Architecture, ASP.NET Core Identity, Repository and
+							Unit of Work patterns, and Stripe integration.
+						</p>
+					</div>
+
+					<!-- VitaCare -->
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Project</span>
+						<h2>VitaCare Clinic Management System</h2>
+						<span class="position">ASP.NET Core Web API</span>
+						<p class="mt-4">
+							Built a RESTful API for clinical workflows, medical
+							records, and billing with JWT authentication,
+							Entity Framework Core, transactions, and SignalR
+							real-time notifications.
+						</p>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- Download CV -->
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-6 text-center ftco-animate">
+					<p>
+						<a href="files/Mohamed_Shalaby_CV.pdf" class="btn btn-primary py-4 px-5" target="_blank">
+							Download CV
+						</a>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section class="ftco-section" id="services-section">
+		<div class="container">
+
+			<!-- Section Header -->
+			<div class="row justify-content-center py-5 mt-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Services</h1>
+					<h2 class="mb-4">What I Can Build</h2>
+					<p>
+						I build secure, scalable, and maintainable backend solutions for modern web applications
+						using .NET and ASP.NET Core.
+					</p>
+				</div>
+			</div>
+
+			<div class="row">
+
+				<!-- Service 1 -->
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#contact-section" class="services-1">
+						<span class="icon">
+							<i class="fa-solid fa-server"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">ASP.NET Core Web API</h3>
+						</div>
+					</a>
+				</div>
+
+				<!-- Service 2 -->
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#contact-section" class="services-1">
+						<span class="icon">
+							<i class="fa-solid fa-code"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">Backend Development</h3>
+						</div>
+					</a>
+				</div>
+
+				<!-- Service 3 -->
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#contact-section" class="services-1">
+						<span class="icon">
+							<i class="fa-solid fa-database"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">Database Design</h3>
+						</div>
+					</a>
+				</div>
+
+				<!-- Service 4 -->
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#contact-section" class="services-1">
+						<span class="icon">
+							<i class="fa-solid fa-lock"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">Authentication &amp; Authorization</h3>
+						</div>
+					</a>
+				</div>
+
+				<!-- Service 5 -->
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#contact-section" class="services-1">
+						<span class="icon">
+							<i class="fa-solid fa-plug"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">API Integration</h3>
+						</div>
+					</a>
+				</div>
+
+				<!-- Service 6 -->
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#contact-section" class="services-1">
+						<span class="icon">
+							<i class="fa-solid fa-layer-group"></i>
+						</span>
+						<div class="desc">
+							<h3 class="mb-5">Backend Architecture</h3>
+						</div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section" id="skills-section">
+		<div class="container">
+
+			<!-- Section Header -->
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+
+					<h1 class="big big-2">Skills</h1>
+
+					<h2 class="mb-4">My Skills</h2>
+
+					<p>
+						Technologies and practices I use to build secure,
+						maintainable, and scalable backend solutions.
+					</p>
+
+				</div>
+			</div>
+
+
+			<!-- Skills -->
+			<div class="row">
+
+				<!-- C# -->
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+
+						<h3>C#</h3>
+
+						<div class="progress">
+							<div class="progress-bar color-1" role="progressbar" style="width: 85%" aria-valuenow="85"
+								aria-valuemin="0" aria-valuemax="100">
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<!-- ASP.NET Core -->
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+
+						<h3>ASP.NET Core</h3>
+
+						<div class="progress">
+							<div class="progress-bar color-2" role="progressbar" style="width: 85%" aria-valuenow="85"
+								aria-valuemin="0" aria-valuemax="100">
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<!-- ASP.NET Core Web API -->
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+
+						<h3>ASP.NET Core Web API</h3>
+
+						<div class="progress">
+							<div class="progress-bar color-3" role="progressbar" style="width: 85%" aria-valuenow="85"
+								aria-valuemin="0" aria-valuemax="100">
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<!-- Entity Framework Core -->
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+
+						<h3>Entity Framework Core</h3>
+
+						<div class="progress">
+							<div class="progress-bar color-4" role="progressbar" style="width: 80%" aria-valuenow="80"
+								aria-valuemin="0" aria-valuemax="100">
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<!-- RESTful APIs -->
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+
+						<h3>RESTful APIs</h3>
+
+						<div class="progress">
+							<div class="progress-bar color-5" role="progressbar" style="width: 85%" aria-valuenow="85"
+								aria-valuemin="0" aria-valuemax="100">
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<!-- SQL Server -->
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+
+						<h3>SQL Server</h3>
+
+						<div class="progress">
+							<div class="progress-bar color-6" role="progressbar" style="width: 75%" aria-valuenow="75"
+								aria-valuemin="0" aria-valuemax="100">
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<!-- Clean Architecture -->
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+
+						<h3>Clean Architecture</h3>
+
+						<div class="progress">
+							<div class="progress-bar color-1" role="progressbar" style="width: 75%" aria-valuenow="75"
+								aria-valuemin="0" aria-valuemax="100">
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<!-- SOLID Principles -->
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+
+						<h3>SOLID Principles</h3>
+
+						<div class="progress">
+							<div class="progress-bar color-2" role="progressbar" style="width: 75%" aria-valuenow="75"
+								aria-valuemin="0" aria-valuemax="100">
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<!-- Authentication -->
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+
+						<h3>JWT &amp; ASP.NET Core Identity</h3>
+
+						<div class="progress">
+							<div class="progress-bar color-3" role="progressbar" style="width: 75%" aria-valuenow="75"
+								aria-valuemin="0" aria-valuemax="100">
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<!-- LINQ -->
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+
+						<h3>LINQ</h3>
+
+						<div class="progress">
+							<div class="progress-bar color-4" role="progressbar" style="width: 75%" aria-valuenow="75"
+								aria-valuemin="0" aria-valuemax="100">
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<!-- Git & GitHub -->
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+
+						<h3>Git &amp; GitHub</h3>
+
+						<div class="progress">
+							<div class="progress-bar color-5" role="progressbar" style="width: 80%" aria-valuenow="80"
+								aria-valuemin="0" aria-valuemax="100">
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<!-- MySQL -->
+				<div class="col-md-6 animate-box">
+					<div class="progress-wrap ftco-animate">
+
+						<h3>MySQL</h3>
+
+						<div class="progress">
+							<div class="progress-bar color-6" role="progressbar" style="width: 70%" aria-valuenow="70"
+								aria-valuemin="0" aria-valuemax="100">
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="ftco-section ftco-project" id="projects-section">
+		<div class="container">
+
+			<!-- Section Header -->
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+
+					<h1 class="big big-2">Projects</h1>
+
+					<h2 class="mb-4">Featured Projects</h2>
+
+					<p>
+						A selection of backend-focused projects showcasing my
+						experience with .NET, ASP.NET Core, APIs, databases,
+						and software architecture.
+					</p>
+
+				</div>
+			</div>
+
+
+			<!-- Projects -->
+			<div class="row">
+
+				<!-- Multi-Vendor Marketplace -->
+				<div class="col-md-6">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						onclick="window.open('https://github.com/shalaby1222/Multi-Vendor-Marketplace', '_blank')"
+						style="background-image: url(images/Home.png); cursor: pointer;">
+
+						<div class="overlay"></div>
+
+						<div class="text text-center p-4">
+
+							<h3>
+								Multi-Vendor Marketplace
+							</h3>
+
+							<span>
+								ASP.NET Core MVC • Clean Architecture • Stripe
+							</span>
+
+						</div>
+					</div>
+				</div>
+
+
+				<!-- Admin Dashboard -->
+				<div class="col-md-6">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						onclick="window.open('https://github.com/shalaby1222/Multi-Vendor-Marketplace', '_blank')"
+						style="background-image: url(images/Admin_Dashboard.png); cursor: pointer;">
+
+						<div class="overlay"></div>
+
+						<div class="text text-center p-4">
+
+							<h3>
+								Admin Dashboard
+							</h3>
+
+							<span>
+								Order Management • Tracking • Backend Logic
+							</span>
+
+						</div>
+					</div>
+				</div>
+
+
+				<!-- VitaCare -->
+				<div class="col-md-12">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center vitacare-project"
+						onclick="window.open('https://github.com/shalaby1222/ClinicManagementSystem-Backend', '_blank')"
+						style="background-image: url(images/vitacare.png); cursor: pointer;">
+
+						<div class="overlay"></div>
+
+						<div class="text text-center p-4">
+
+							<h3>
+								VitaCare Clinic Management System
+							</h3>
+
+							<span>
+								ASP.NET Core Web API • EF Core • SignalR
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+<section class="ftco-section ftco-hireme-custom" style="background-image: url(images/bg_1.jpg);">
+
+	<div class="container">
+		<div class="row justify-content-center">
+
+			<div class="col-md-7 text-center">
+
+				<h2>
+					Let's Build Something <span>Great</span> Together
+				</h2>
+
+				<p>
+					Have a project or idea in mind?
+					Let's discuss how I can help you build a reliable
+					and scalable backend solution.
+				</p>
+
+				<a href="#contact-section" class="btn btn-primary py-3 px-4">
+					Let's Work Together
+				</a>
+
+			</div>
+
+		</div>
+	</div>
+
+</section>
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+
+			<!-- Section Header -->
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+
+					<h1 class="big big-2">Contact</h1>
+
+					<h2 class="mb-4">Get In Touch</h2>
+
+					<p>
+						Have a question, project idea, or freelance opportunity?
+						I'd be happy to hear from you.
+					</p>
+
+				</div>
+			</div>
+
+
+
+			<!-- Contact Information -->
+			<div class="row d-flex contact-info mb-5">
+
+				<!-- Location -->
+				<div class="col-md-6 col-lg d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-map-signs"></span>
+						</div>
+
+						<h3 class="mb-4">Location</h3>
+
+						<p>Gharbia, Egypt</p>
+
+					</div>
+				</div>
+
+
+				<!-- Phone -->
+				<div class="col-md-6 col-lg d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-phone2"></span>
+						</div>
+
+						<h3 class="mb-4">Phone</h3>
+
+						<p>
+							<a href="tel:+201003274238">
+								+20 100 327 4238
+							</a>
+						</p>
+
+					</div>
+				</div>
+
+
+				<!-- Email -->
+				<div class="col-md-6 col-lg d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-paper-plane"></span>
+						</div>
+
+						<h3 class="mb-4">Email</h3>
+
+						<p>
+							<a href="mailto:momoshalaby46@gmail.com">
+								momoshalaby46@gmail.com
+							</a>
+						</p>
+
+					</div>
+				</div>
+
+
+				<!-- LinkedIn -->
+				<div class="col-md-6 col-lg d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-linkedin"></span>
+						</div>
+
+						<h3 class="mb-4">LinkedIn</h3>
+
+						<p>
+							<a href="https://linkedin.com/in/moredash" target="_blank" rel="noopener noreferrer">
+								linkedin.com/in/moredash
+							</a>
+						</p>
+
+					</div>
+				</div>
+				<!-- GitHub -->
+				<div class="col-md-6 col-lg d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-github"></span>
+						</div>
+
+						<h3 class="mb-4">GitHub</h3>
+
+						<p>
+							<a href="https://github.com/shalaby1222" target="_blank" rel="noopener noreferrer">
+								github.com/shalaby1222
+							</a>
+						</p>
+
+					</div>
+				</div>
+
+			</div>
+
+
+			<!-- Contact Area -->
+			<div class="row no-gutters block-9">
+
+				<!-- Contact Form -->
+				<div class="col-md-6 order-md-last d-flex">
+
+					<div class="bg-light p-4 p-md-5 contact-form">
+
+						<div class="form-group">
+							<input type="text" id="contact-name" class="form-control" placeholder="Your Name" required>
+						</div>
+
+						<div class="form-group">
+							<input type="email" id="contact-email" class="form-control" placeholder="Your Email"
+								required>
+						</div>
+
+						<div class="form-group">
+							<input type="text" id="contact-subject" class="form-control" placeholder="Subject" required>
+						</div>
+
+						<div class="form-group">
+							<textarea id="contact-message" cols="30" rows="7" class="form-control" placeholder="Message"
+								required></textarea>
+						</div>
+
+						<button type="button" onclick="sendEmail()" class="btn btn-primary py-3 px-5">
+							Send Message
+						</button>
+					</div>
+
+				</div>
+
+
+				<!-- Image -->
+				<div class="col-md-6 d-flex">
+
+					<div class="img contact-photo" style="background-image: url(images/mohamed-shalaby.png);">
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<footer class="ftco-footer ftco-section">
+
+				<div class="container">
+
+					<div class="row mb-5">
+
+						<!-- About -->
+						<div class="col-md">
+							<div class="ftco-footer-widget mb-4">
+
+								<h2 class="ftco-heading-2">Mohamed Shalaby</h2>
+
+								<p>
+									Junior .NET Backend Developer focused on building
+									reliable, secure, and scalable backend solutions
+									using ASP.NET Core and .NET.
+								</p>
+
+								<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+
+									<li class="ftco-animate">
+										<a href="https://linkedin.com/in/moredash" target="_blank">
+											<span class="icon-linkedin"></span>
+										</a>
+									</li>
+
+									<li class="ftco-animate">
+										<a href="https://github.com/shalaby1222" target="_blank">
+											<span class="icon-github"></span>
+										</a>
+									</li>
+
+								</ul>
+
+							</div>
+						</div>
+
+
+						<!-- Quick Links -->
+						<div class="col-md">
+							<div class="ftco-footer-widget mb-4 ml-md-4">
+
+								<h2 class="ftco-heading-2">Quick Links</h2>
+
+								<ul class="list-unstyled">
+
+									<li>
+										<a href="#home-section">
+											<span class="icon-long-arrow-right mr-2"></span>
+											Home
+										</a>
+									</li>
+
+									<li>
+										<a href="#about-section">
+											<span class="icon-long-arrow-right mr-2"></span>
+											About
+										</a>
+									</li>
+
+									<li>
+										<a href="#resume-section">
+											<span class="icon-long-arrow-right mr-2"></span>
+											Resume
+										</a>
+									</li>
+
+									<li>
+										<a href="#services-section">
+											<span class="icon-long-arrow-right mr-2"></span>
+											Services
+										</a>
+									</li>
+
+									<li>
+										<a href="#projects-section">
+											<span class="icon-long-arrow-right mr-2"></span>
+											Projects
+										</a>
+									</li>
+
+									<li>
+										<a href="#contact-section">
+											<span class="icon-long-arrow-right mr-2"></span>
+											Contact
+										</a>
+									</li>
+
+								</ul>
+
+							</div>
+						</div>
+
+
+						<!-- Services -->
+						<div class="col-md">
+							<div class="ftco-footer-widget mb-4">
+
+								<h2 class="ftco-heading-2">Services</h2>
+
+								<ul class="list-unstyled">
+
+									<li>
+										<a href="#contact-section">
+											<span class="icon-long-arrow-right mr-2"></span>
+											ASP.NET Core Web API
+										</a>
+									</li>
+
+									<li>
+										<a href="#contact-section">
+											<span class="icon-long-arrow-right mr-2"></span>
+											Backend Development
+										</a>
+									</li>
+
+									<li>
+										<a href="#contact-section">
+											<span class="icon-long-arrow-right mr-2"></span>
+											Database Design
+										</a>
+									</li>
+
+									<li>
+										<a href="#contact-section">
+											<span class="icon-long-arrow-right mr-2"></span>
+											Authentication &amp; Authorization
+										</a>
+									</li>
+
+									<li>
+										<a href="#contact-section">
+											<span class="icon-long-arrow-right mr-2"></span>
+											API Integration
+										</a>
+									</li>
+									<li>
+										<a href="#contact-section">
+											<span class="icon-long-arrow-right mr-2"></span>
+											Backend Architecture
+										</a>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+
+
+						<!-- Contact -->
+						<div class="col-md">
+							<div class="ftco-footer-widget mb-4">
+
+								<h2 class="ftco-heading-2">Get In Touch</h2>
+
+								<div class="block-23 mb-3">
+
+									<ul>
+
+										<li>
+											<span class="icon icon-map-marker"></span>
+											<span class="text">
+												Gharbia, Egypt
+											</span>
+										</li>
+
+										<li>
+											<a href="tel:+201003274238">
+												<span class="icon icon-phone"></span>
+												<span class="text">
+													+20 100 327 4238
+												</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="mailto:momoshalaby46@gmail.com">
+												<span class="icon icon-envelope"></span>
+												<span class="text">
+													momoshalaby46@gmail.com
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="https://linkedin.com/in/moredash" target="_blank"
+												rel="noopener noreferrer">
+												<span class="icon icon-github"></span>
+												<span class="text">
+													github.com/shalaby1222
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="https://linkedin.com/in/moredash" target="_blank"
+												rel="noopener noreferrer">
+												<span class="icon icon-github"></span>
+												<span class="text">
+													github.com/shalaby1222
+												</span>
+											</a>
+										</li>
+
+									</ul>
+
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+
+					<!-- Copyright -->
+					<div class="row">
+
+						<div class="col-md-12 text-center">
+
+							<p>
+								Copyright &copy;
+								<script>
+									document.write(new Date().getFullYear());
+								</script>
+								Mohamed Shalaby. All rights reserved.
+							</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</footer>
+
+
+
+			<!-- loader -->
+			<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+					<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+					<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+						stroke="#F96D00" />
+				</svg></div>
+
+
+			<script src="js/jquery.min.js"></script>
+			<script src="js/jquery-migrate-3.0.1.min.js"></script>
+			<script src="js/popper.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/jquery.easing.1.3.js"></script>
+			<script src="js/jquery.waypoints.min.js"></script>
+			<script src="js/jquery.stellar.min.js"></script>
+			<script src="js/owl.carousel.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>
+			<script src="js/aos.js"></script>
+			<script src="js/jquery.animateNumber.min.js"></script>
+			<script src="js/scrollax.min.js"></script>
+
+			<script src="js/main.js"></script>
+
+</body>
+
+</html>
