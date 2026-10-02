@@ -27,55 +27,6 @@
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<script>
-	function sendEmail() {
-
-		const name = document.getElementById("contact-name").value;
-		const email = document.getElementById("contact-email").value;
-		const subject = document.getElementById("contact-subject").value;
-		const message = document.getElementById("contact-message").value;
-
-		const body =
-			"Name: " + name + "%0D%0A" +
-			"Email: " + email + "%0D%0A%0D%0A" +
-			message;
-
-		const mailtoLink =
-			"mailto:momoshalaby46@gmail.com" +
-			"?subject=" + encodeURIComponent(subject) +
-			"&body=" + body;
-
-		window.location.href = mailtoLink;
-	}
-</script>
-
-<script>
-	$(document).ready(function () {
-
-		// Close menu when clicking a navigation link
-		$('#ftco-nav .nav-link').on('click', function () {
-			$('#ftco-nav').collapse('hide');
-		});
-
-		// Close menu when clicking outside the navbar
-		$(document).on('click', function (event) {
-
-			var navbar = $('#ftco-navbar');
-
-			if (
-				navbar.hasClass('js-fh5co-nav-toggle') &&
-				!navbar.is(event.target) &&
-				navbar.has(event.target).length === 0
-			) {
-				$('#ftco-nav').collapse('hide');
-			}
-
-		});
-
-	});
-</script>
-
-
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
@@ -111,9 +62,11 @@
 					</li>
 
 					<li class="nav-item">
-						<a href="#resume-section" class="nav-link">
-							<span>Resume</span>
-						</a>
+						<a href="#education-section" class="nav-link"><span>Education</span></a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#experience-section" class="nav-link"><span>Experience</span></a>
 					</li>
 
 					<li class="nav-item">
@@ -157,7 +110,7 @@
 					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
 						data-scrollax-parent="true">
 
-						<div class="one-third js-fullheight order-md-last img"
+						<div class="one-third order-md-last img"
 							style="background-image:url(images/mohamed-shalaby.png);">
 							<div class="overlay"></div>
 						</div>
@@ -183,7 +136,7 @@
 								</p>
 
 								<p>
-									<a href="#contact-section" class="btn btn-primary py-3 px-4">
+									<a href="#projects-section" class="btn btn-primary py-3 px-4">
 										View My Work
 									</a>
 
@@ -205,7 +158,7 @@
 					<div class="row d-flex no-gutters slider-text align-items-end justify-content-end"
 						data-scrollax-parent="true">
 
-						<div class="one-third js-fullheight order-md-last img"
+						<div class="one-third order-md-last img"
 							style="background-image:url(images/mohamed-shalaby.png);">
 							<div class="overlay"></div>
 						</div>
@@ -234,7 +187,7 @@
 								</p>
 
 								<p>
-										<a href="#contact-section" class="btn btn-primary py-3 px-4">
+										<a href="#projects-section" class="btn btn-primary py-3 px-4">
 											View My Work
 										</a>
 
@@ -252,220 +205,94 @@
 
 
 
-	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+	<section class="ftco-about ftco-section" id="about-section">
 		<div class="container">
-			<div class="row d-flex">
-
-				<!-- About Image -->
-				<div class="col-md-6 col-lg-5 d-flex">
-					<div class="img-about img d-flex align-items-stretch">
-						<div class="overlay"></div>
-						<div class="img d-flex align-self-stretch align-items-center"
-							style="background-image:url(images/mohamed-shalaby.png);">
-						</div>
-					</div>
-				</div>
-
-				<!-- About Content -->
-				<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-					<div class="row justify-content-start pb-3">
-						<div class="col-md-12 heading-section ftco-animate">
-
-							<h1 class="big">About</h1>
-
-							<h2 class="mb-4">About Me</h2>
-
-							<p>
-								I'm a Junior .NET Backend Developer and Computer Science student
-								passionate about building reliable, scalable, and maintainable
-								backend solutions. I specialize in C#, ASP.NET Core, Web APIs,
-								Entity Framework Core, and SQL Server.
-							</p>
-
-							<p>
-								I focus on designing clean backend architectures, building
-								secure RESTful APIs, and creating systems that are easy to
-								maintain and scale. Through academic projects, training, and
-								hands-on development, I've worked with Clean Architecture,
-								SOLID principles, authentication, database design, and
-								third-party API integration.
-							</p>
-
-							<ul class="about-info mt-4 px-md-0 px-2">
-								<li class="d-flex">
-									<span>Name:</span>
-									<span>Mohamed Reda Shalaby</span>
-								</li>
-
-								<li class="d-flex">
-									<span>Education:</span>
-									<span>B.Sc. Computer Science</span>
-								</li>
-
-								<li class="d-flex">
-									<span>University:</span>
-									<span>October 6 University</span>
-								</li>
-
-								<li class="d-flex">
-									<span>Specialization:</span>
-									<span>.NET Backend Development</span>
-								</li>
-
-								<li class="d-flex">
-									<span>Email:</span>
-									<span>momoshalaby46@gmail.com</span>
-								</li>
-
-								<li class="d-flex">
-									<span>Location:</span>
-									<span>Gharbia, Egypt</span>
-								</li>
-							</ul>
-
-						</div>
-					</div>
-
-					<div class="counter-wrap ftco-animate d-flex mt-md-3">
-						<div class="text">
-
-							<p class="mb-4">
-								<span class="number" data-number="3">0</span>
-								<span>Featured Projects</span>
-							</p>
-
-							<p>
-								<a href="files/Mohamed_Shalaby_CV.pdf" class="btn btn-primary py-4 px-5"
-									target="_blank">
-									Download CV
-								</a>
-							</p>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section ftco-no-pb" id="resume-section">
-		<div class="container">
-
-			<!-- Section Header -->
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-10 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Resume</h1>
-					<h2 class="mb-4">My Resume</h2>
+			<div class="row justify-content-center">
+				<div class="col-lg-9 heading-section text-center ftco-animate">
+					<h1 class="big big-2">About</h1>
+					<h2 class="mb-4">About Me</h2>
 					<p>
-						My academic background, professional training, and hands-on
-						experience in backend development.
+						I'm a Junior .NET Backend Developer and Computer Science student passionate about building reliable, scalable, and maintainable backend solutions. I specialize in C#, ASP.NET Core, Web APIs, Entity Framework Core, and SQL Server.
 					</p>
-				</div>
-			</div>
-
-			<div class="row">
-
-				<!-- LEFT COLUMN -->
-				<div class="col-md-6">
-
-					<!-- Education -->
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2023 - 2027</span>
-						<h2>B.Sc. Computer Science</h2>
-						<span class="position">October 6 University</span>
-						<p class="mt-4">
-							Studying Computer Science with a focus on software
-							development, programming, databases, and system design.
-							Current CGPA: 3.37 / 4.00.
-						</p>
-					</div>
-
-					<!-- NTI Training -->
-					<div class="resume-wrap ftco-animate">
-						<span class="date">Jul 2025 - Aug 2025</span>
-						<h2>Full-Stack Web Development Trainee</h2>
-						<span class="position">National Telecommunication Institute (NTI)</span>
-						<p class="mt-4">
-							Worked on backend development using PHP and Laravel,
-							RESTful APIs, authentication and authorization,
-							database design, and MySQL.
-						</p>
-					</div>
-
-					<!-- DEPI -->
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2026 - Present</span>
-						<h2>.NET Full-Stack Web Developer Trainee</h2>
-						<span class="position">Digital Egypt Pioneers Initiative (DEPI)</span>
-						<p class="mt-4">
-							Developing practical skills in C#, .NET, ASP.NET Core,
-							Web APIs, databases, software architecture, and
-							professional development.
-						</p>
-					</div>
-
-				</div>
-
-
-				<!-- RIGHT COLUMN -->
-				<div class="col-md-6">
-
-					<!-- Backend Development -->
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2025 - Present</span>
-						<h2>Backend Developer</h2>
-						<span class="position">Personal & Academic Projects</span>
-						<p class="mt-4">
-							Building backend applications and RESTful APIs using
-							C#, ASP.NET Core, Entity Framework Core, SQL Server,
-							Clean Architecture, and SOLID principles.
-						</p>
-					</div>
-
-					<!-- Marketplace -->
-					<div class="resume-wrap ftco-animate">
-						<span class="date">Project</span>
-						<h2>Multi-Vendor Marketplace</h2>
-						<span class="position">ASP.NET Core MVC</span>
-						<p class="mt-4">
-							Developed a multi-vendor e-commerce application with
-							Admin, Vendor, and Customer roles using Clean
-							Architecture, ASP.NET Core Identity, Repository and
-							Unit of Work patterns, and Stripe integration.
-						</p>
-					</div>
-
-					<!-- VitaCare -->
-					<div class="resume-wrap ftco-animate">
-						<span class="date">Project</span>
-						<h2>VitaCare Clinic Management System</h2>
-						<span class="position">ASP.NET Core Web API</span>
-						<p class="mt-4">
-							Built a RESTful API for clinical workflows, medical
-							records, and billing with JWT authentication,
-							Entity Framework Core, transactions, and SignalR
-							real-time notifications.
-						</p>
-					</div>
-
-				</div>
-
-			</div>
-
-			<!-- Download CV -->
-			<div class="row justify-content-center mt-5">
-				<div class="col-md-6 text-center ftco-animate">
 					<p>
-						<a href="files/Mohamed_Shalaby_CV.pdf" class="btn btn-primary py-4 px-5" target="_blank">
-							Download CV
+						I focus on designing clean backend architectures, building secure RESTful APIs, and creating systems that are easy to maintain and scale. Through academic projects, training, and hands-on development, I've worked with Clean Architecture, SOLID principles, authentication, database design, and third-party API integration.
+					</p>
+					<p class="mt-5">
+						<a href="files/Mohamed_Shalaby_CV.pdf" class="btn btn-primary py-3 px-5" target="_blank" rel="noopener noreferrer">
+							<i class="fa-solid fa-download mr-2"></i>Download CV
 						</a>
 					</p>
 				</div>
 			</div>
-
 		</div>
 	</section>
+
+	<section class="ftco-section ftco-no-pb" id="education-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Education</h1>
+					<h2 class="mb-4">Education</h2>
+					<p>My academic background in Computer Science.</p>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-9 ftco-animate">
+					<div class="resume-wrap edu-card">
+						<span class="date">2023 - 2027</span>
+						<h2>B.Sc. Computer Science</h2>
+						<span class="position">October 6 University</span>
+						<p class="mt-4">Studying Computer Science with a focus on software development, programming, databases, and system design.</p>
+						<div class="edu-chips">
+							<span class="edu-chip gpa">CGPA 3.37 / 4.00</span>
+							<span class="edu-chip">Software Development</span>
+							<span class="edu-chip">Databases</span>
+							<span class="edu-chip">System Design</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section" id="experience-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Experience</h1>
+					<h2 class="mb-4">Experience</h2>
+					<p>My professional training and hands-on experience in backend development.</p>
+				</div>
+			</div>
+			<div class="timeline">
+				<div class="timeline-item ftco-animate">
+					<div class="resume-wrap">
+						<span class="date">2026 - Present</span>
+						<h2>.NET Full-Stack Web Developer Trainee</h2>
+						<span class="position">Digital Egypt Pioneers Initiative (DEPI)</span>
+						<p class="mt-4">Developing practical skills in C#, .NET, ASP.NET Core, Web APIs, databases, software architecture, and professional development.</p>
+					</div>
+				</div>
+				<div class="timeline-item ftco-animate">
+					<div class="resume-wrap">
+						<span class="date">2025 - Present</span>
+						<h2>Backend Developer</h2>
+						<span class="position">Personal &amp; Academic Projects</span>
+						<p class="mt-4">Building backend applications and RESTful APIs using C#, ASP.NET Core, Entity Framework Core, SQL Server, Clean Architecture, and SOLID principles.</p>
+					</div>
+				</div>
+				<div class="timeline-item ftco-animate">
+					<div class="resume-wrap">
+						<span class="date">Jul 2025 - Aug 2025</span>
+						<h2>Full-Stack Web Development Trainee</h2>
+						<span class="position">National Telecommunication Institute (NTI)</span>
+						<p class="mt-4">Worked on backend development using PHP and Laravel, RESTful APIs, authentication and authorization, database design, and MySQL.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<section class="ftco-section" id="services-section">
 		<div class="container">
 
@@ -583,196 +410,87 @@
 			<div class="row">
 
 				<!-- C# -->
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-
-						<h3>C#</h3>
-
-						<div class="progress">
-							<div class="progress-bar color-1" role="progressbar" style="width: 85%" aria-valuenow="85"
-								aria-valuemin="0" aria-valuemax="100">
-							</div>
-						</div>
-
-					</div>
+				<div class="col-6 col-md-4 col-lg-3 ftco-animate">
+					<div class="lang-card skill-card"><i class="fa-solid fa-code"></i><h4>C#</h4></div>
 				</div>
 
 
 				<!-- ASP.NET Core -->
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-
-						<h3>ASP.NET Core</h3>
-
-						<div class="progress">
-							<div class="progress-bar color-2" role="progressbar" style="width: 85%" aria-valuenow="85"
-								aria-valuemin="0" aria-valuemax="100">
-							</div>
-						</div>
-
-					</div>
+				<div class="col-6 col-md-4 col-lg-3 ftco-animate">
+					<div class="lang-card skill-card"><i class="fa-solid fa-server"></i><h4>ASP.NET Core</h4></div>
 				</div>
 
 
 				<!-- ASP.NET Core Web API -->
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-
-						<h3>ASP.NET Core Web API</h3>
-
-						<div class="progress">
-							<div class="progress-bar color-3" role="progressbar" style="width: 85%" aria-valuenow="85"
-								aria-valuemin="0" aria-valuemax="100">
-							</div>
-						</div>
-
-					</div>
+				<div class="col-6 col-md-4 col-lg-3 ftco-animate">
+					<div class="lang-card skill-card"><i class="fa-solid fa-plug"></i><h4>ASP.NET Core Web API</h4></div>
 				</div>
 
 
 				<!-- Entity Framework Core -->
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-
-						<h3>Entity Framework Core</h3>
-
-						<div class="progress">
-							<div class="progress-bar color-4" role="progressbar" style="width: 80%" aria-valuenow="80"
-								aria-valuemin="0" aria-valuemax="100">
-							</div>
-						</div>
-
-					</div>
+				<div class="col-6 col-md-4 col-lg-3 ftco-animate">
+					<div class="lang-card skill-card"><i class="fa-solid fa-diagram-project"></i><h4>Entity Framework Core</h4></div>
 				</div>
 
 
 				<!-- RESTful APIs -->
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-
-						<h3>RESTful APIs</h3>
-
-						<div class="progress">
-							<div class="progress-bar color-5" role="progressbar" style="width: 85%" aria-valuenow="85"
-								aria-valuemin="0" aria-valuemax="100">
-							</div>
-						</div>
-
-					</div>
+				<div class="col-6 col-md-4 col-lg-3 ftco-animate">
+					<div class="lang-card skill-card"><i class="fa-solid fa-plug"></i><h4>RESTful APIs</h4></div>
 				</div>
 
 
 				<!-- SQL Server -->
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-
-						<h3>SQL Server</h3>
-
-						<div class="progress">
-							<div class="progress-bar color-6" role="progressbar" style="width: 75%" aria-valuenow="75"
-								aria-valuemin="0" aria-valuemax="100">
-							</div>
-						</div>
-
-					</div>
+				<div class="col-6 col-md-4 col-lg-3 ftco-animate">
+					<div class="lang-card skill-card"><i class="fa-solid fa-database"></i><h4>SQL Server</h4></div>
 				</div>
 
 
 				<!-- Clean Architecture -->
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-
-						<h3>Clean Architecture</h3>
-
-						<div class="progress">
-							<div class="progress-bar color-1" role="progressbar" style="width: 75%" aria-valuenow="75"
-								aria-valuemin="0" aria-valuemax="100">
-							</div>
-						</div>
-
-					</div>
+				<div class="col-6 col-md-4 col-lg-3 ftco-animate">
+					<div class="lang-card skill-card"><i class="fa-solid fa-layer-group"></i><h4>Clean Architecture</h4></div>
 				</div>
 
 
 				<!-- SOLID Principles -->
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-
-						<h3>SOLID Principles</h3>
-
-						<div class="progress">
-							<div class="progress-bar color-2" role="progressbar" style="width: 75%" aria-valuenow="75"
-								aria-valuemin="0" aria-valuemax="100">
-							</div>
-						</div>
-
-					</div>
+				<div class="col-6 col-md-4 col-lg-3 ftco-animate">
+					<div class="lang-card skill-card"><i class="fa-solid fa-cubes"></i><h4>SOLID Principles</h4></div>
 				</div>
 
 
 				<!-- Authentication -->
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-
-						<h3>JWT &amp; ASP.NET Core Identity</h3>
-
-						<div class="progress">
-							<div class="progress-bar color-3" role="progressbar" style="width: 75%" aria-valuenow="75"
-								aria-valuemin="0" aria-valuemax="100">
-							</div>
-						</div>
-
-					</div>
+				<div class="col-6 col-md-4 col-lg-3 ftco-animate">
+					<div class="lang-card skill-card"><i class="fa-solid fa-server"></i><h4>JWT &amp; ASP.NET Core Identity</h4></div>
 				</div>
 
 
 				<!-- LINQ -->
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-
-						<h3>LINQ</h3>
-
-						<div class="progress">
-							<div class="progress-bar color-4" role="progressbar" style="width: 75%" aria-valuenow="75"
-								aria-valuemin="0" aria-valuemax="100">
-							</div>
-						</div>
-
-					</div>
+				<div class="col-6 col-md-4 col-lg-3 ftco-animate">
+					<div class="lang-card skill-card"><i class="fa-solid fa-magnifying-glass"></i><h4>LINQ</h4></div>
 				</div>
 
 
 				<!-- Git & GitHub -->
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-
-						<h3>Git &amp; GitHub</h3>
-
-						<div class="progress">
-							<div class="progress-bar color-5" role="progressbar" style="width: 80%" aria-valuenow="80"
-								aria-valuemin="0" aria-valuemax="100">
-							</div>
-						</div>
-
-					</div>
+				<div class="col-6 col-md-4 col-lg-3 ftco-animate">
+					<div class="lang-card skill-card"><i class="fa-brands fa-github"></i><h4>Git &amp; GitHub</h4></div>
 				</div>
 
 
 				<!-- MySQL -->
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-
-						<h3>MySQL</h3>
-
-						<div class="progress">
-							<div class="progress-bar color-6" role="progressbar" style="width: 70%" aria-valuenow="70"
-								aria-valuemin="0" aria-valuemax="100">
-							</div>
-						</div>
-
-					</div>
+				<div class="col-6 col-md-4 col-lg-3 ftco-animate">
+					<div class="lang-card skill-card"><i class="fa-solid fa-database"></i><h4>MySQL</h4></div>
 				</div>
 
+			</div>
+		
+			<!-- Languages (edit the level labels if needed) -->
+			<div class="row justify-content-center mt-5">
+				<div class="col-12 text-center ftco-animate"><h3 class="lang-title">Languages</h3></div>
+				<div class="col-md-5 col-lg-4 ftco-animate">
+					<div class="lang-card"><i class="fa-solid fa-language"></i><h4>Arabic</h4><span>Native</span></div>
+				</div>
+				<div class="col-md-5 col-lg-4 ftco-animate">
+					<div class="lang-card"><i class="fa-solid fa-language"></i><h4>English</h4><span>Professional Working Proficiency</span></div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -1023,10 +741,10 @@
 
 
 			<!-- Contact Area -->
-			<div class="row no-gutters block-9">
+			<div class="row no-gutters block-9 justify-content-center">
 
 				<!-- Contact Form -->
-				<div class="col-md-6 order-md-last d-flex">
+				<div class="col-md-10 col-lg-8 d-flex">
 
 					<div class="bg-light p-4 p-md-5 contact-form">
 
@@ -1051,15 +769,6 @@
 						<button type="button" onclick="sendEmail()" class="btn btn-primary py-3 px-5">
 							Send Message
 						</button>
-					</div>
-
-				</div>
-
-
-				<!-- Image -->
-				<div class="col-md-6 d-flex">
-
-					<div class="img contact-photo" style="background-image: url(images/mohamed-shalaby.png);">
 					</div>
 
 				</div>
@@ -1127,12 +836,8 @@
 										</a>
 									</li>
 
-									<li>
-										<a href="#resume-section">
-											<span class="icon-long-arrow-right mr-2"></span>
-											Resume
-										</a>
-									</li>
+									<li><a href="#education-section"><span class="icon-long-arrow-right mr-2"></span>Education</a></li>
+									<li><a href="#experience-section"><span class="icon-long-arrow-right mr-2"></span>Experience</a></li>
 
 									<li>
 										<a href="#services-section">
@@ -1250,20 +955,12 @@
 											</a>
 										</li>
 										<li>
-											<a href="https://linkedin.com/in/moredash" target="_blank"
-												rel="noopener noreferrer">
-												<span class="icon icon-github"></span>
-												<span class="text">
-													github.com/shalaby1222
+											<a href="https://linkedin.com/in/moredash" target="_blank" rel="noopener noreferrer"><span class="icon icon-linkedin"></span><span class="text">linkedin.com/in/moredash
 												</span>
 											</a>
 										</li>
 										<li>
-											<a href="https://linkedin.com/in/moredash" target="_blank"
-												rel="noopener noreferrer">
-												<span class="icon icon-github"></span>
-												<span class="text">
-													github.com/shalaby1222
+											<a href="https://github.com/shalaby1222" target="_blank" rel="noopener noreferrer"><span class="icon icon-github"></span><span class="text">github.com/shalaby1222
 												</span>
 											</a>
 										</li>
@@ -1324,6 +1021,38 @@
 
 			<script src="js/main.js"></script>
 
+	<script>
+		function sendEmail() {
+			var v = function (id) { return document.getElementById(id).value.trim(); };
+			var name = v("contact-name"), email = v("contact-email"), subject = v("contact-subject"), message = v("contact-message");
+			if (!name || !email || !message) { alert("Please fill in your name, email and message."); return; }
+			var body = "Name: " + name + "\nEmail: " + email + "\n\n" + message;
+			window.location.href = "mailto:momoshalaby46@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+		}
+		$(document).ready(function () {
+			$('#ftco-nav .nav-link').on('click', function () { $('#ftco-nav').collapse('hide'); });
+		});
+	</script>
+
+
+<div class="scroll-progress" id="scrollProgress"></div>
+	<div class="cursor-glow" id="cursorGlow"></div>
+	<script>
+		(function () {
+			var bar = document.getElementById('scrollProgress'), glow = document.getElementById('cursorGlow');
+			window.addEventListener('scroll', function () {
+				var h = document.documentElement;
+				bar.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
+			}, { passive: true });
+			if (window.matchMedia('(hover:hover)').matches) {
+				document.addEventListener('mousemove', function (e) {
+					glow.style.transform = 'translate(' + (e.clientX - 200) + 'px,' + (e.clientY - 200) + 'px)';
+					var c = e.target.closest && e.target.closest('.resume-wrap,.services-1,.lang-card,.contact-info .box');
+					if (c) { var r = c.getBoundingClientRect(); c.style.setProperty('--mx', (e.clientX - r.left) + 'px'); c.style.setProperty('--my', (e.clientY - r.top) + 'px'); }
+				});
+			}
+		})();
+	</script>
 </body>
 
 </html>
