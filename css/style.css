@@ -14302,3 +14302,35 @@ html { scroll-behavior: smooth; }
 .skill-card { padding: 22px 12px; margin-bottom: 24px; }
 .skill-card i { font-size: 28px; margin-bottom: 8px; }
 .skill-card h4 { font-size: 16px; margin: 0; }
+
+/* =========================================
+   MOBILE FIXES: scroll, parallax, hero look
+========================================= */
+#home-section .owl-carousel, #home-section .owl-stage-outer, #home-section .owl-stage, #home-section .owl-item { touch-action: pan-y !important; }
+
+@media (max-width: 991.98px) {
+  /* disable scroll-parallax transforms that push the text around on touch screens */
+  #home-section .one-forth, #home-section .one-third { transform: none !important; }
+  #home-section .slider-item .overlay { display: none; }
+}
+
+@media (max-width: 767.98px) {
+  #home-section::before { width: 260px; height: 260px; left: -90px; top: 4%; filter: blur(70px); }
+  #home-section::after { width: 240px; height: 240px; right: -60px; bottom: 5%; filter: blur(70px); }
+
+  #home-section .slider-text { padding: 0 15px 56px !important; }
+  #home-section .one-third { height: 340px !important; margin-bottom: -70px !important; background-size: contain !important; background-position: center bottom !important; }
+  #home-section .one-third::after { height: 40%; }
+  #home-section .one-forth { padding: 0 6px !important; }
+  #home-section .one-forth .text { position: relative; z-index: 2; }
+  #home-section .subheading { display: inline-block; padding: 5px 14px; border: 1px solid rgba(255, 189, 57, 0.4); border-radius: 50px; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; }
+  #home-section h1 { font-size: 30px; margin-top: 14px !important; }
+  #home-section h2 { font-size: 18px; color: #d9d9d9; }
+  #home-section .one-forth p { color: #cfcfcf !important; }
+  #home-section .one-forth .btn { max-width: 100%; }
+}
+
+@media (max-width: 400px) {
+  #home-section .one-third { height: 290px !important; }
+  #home-section h1 { font-size: 26px; }
+}
